@@ -1,0 +1,17 @@
+<div class="category-boxs">
+  <div
+    *ngFor="let category of categories"
+    class="category-box"
+    [routerLink]="'/event-list/tasksList/' + category.id"
+  >
+    <div class="cat-logo">
+      <img
+        class="briefcase"
+        [src]="category.imgPath"
+        alt="{{ category.alt }}"
+      />
+    </div>
+    <h5>{{ category.name }}</h5>
+    <p>{{ category.tasksNumber + ' Tasks' }}</p>
+  </div>
+</div>

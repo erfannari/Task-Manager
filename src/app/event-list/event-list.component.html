@@ -1,0 +1,23 @@
+<div class="container">
+  <app-home-header></app-home-header>
+  <div class="tasks">
+    <div class="tasks-desc">
+      <h3>{{ categoryName }}</h3>
+      <p>{{ currentDate | date : "fullDate" }}</p>
+    </div>
+    <div class="add-tasks">
+      <input
+        type="text"
+        id="addTasks"
+        placeholder="Add Tasks..."
+        [(ngModel)]="inputValue"
+      />
+      <button class="btn btn-primary" (click)="AddTaskEventHandler()">
+        <img src="../../assets/Icons/plus.png" alt="plus" />
+        Add Task
+      </button>
+    </div>
+  </div>
+  <app-event-section></app-event-section>
+</div>
+<!-- <app-event-section (onSendTasksToChild)="onGettingTasks($event)"></app-event-section> -->

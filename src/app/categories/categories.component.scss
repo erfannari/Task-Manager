@@ -1,0 +1,47 @@
+@import "../../styles.scss";
+.category-boxs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.category-box {
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s all ease-in-out;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h5 {
+    font-size: 1.2rem;
+    font-family: Dosis;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: Dosis;
+    margin: 1rem 0;
+  }
+}
+.category-box:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+.cat-logo {
+  background-color: #d4e2d4;
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+.briefcase {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.cat-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
