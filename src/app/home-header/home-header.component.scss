@@ -1,0 +1,34 @@
+@import '../../styles.scss';
+.header {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .4rem 1rem;
+  }
+  .title {
+    h3 {
+      font-size: 1.8rem;
+      font-family: 'dosis-bold';
+      color: $betterBlack;
+    }
+    p {
+      font-size: 0.8rem;
+      font-family: 'dosis-medium';
+      letter-spacing: 1px;
+      color: $betterGray;
+    }
+  }
+  
+  .acc-image {
+    height: 4rem;
+    width: 4rem;
+  }
+  .acc-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  

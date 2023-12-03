@@ -1,0 +1,76 @@
+@import "../../styles.scss";
+.container {
+  background-color: white;
+  width: 30rem; /* need to be delete */
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-radius: 10px;
+  .tasks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    .tasks-desc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        font-family: "dosis-bold";
+        color: $betterBlack;
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: "dosis-medium";
+        margin: 0;
+        letter-spacing: 1px;
+        color: $betterGray;
+      }
+    }
+    .add-tasks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 1rem;
+      width: 100%;
+      input {
+        font-family: "dosis-medium";
+        margin: 0.5rem;
+        width: 50%;
+        border: 1px solid $betterBlack;
+        border-radius: 5px;
+        outline: none;
+        padding: .4rem 0.5rem;
+        ::placeholder {
+          letter-spacing: 1px;
+          color: $betterGray;
+        }
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        background-color: $lightOcean;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-family: "dosis-medium";
+        font-weight: lighter;
+        color: $betterBlack;
+        padding: 0.5rem 1.3rem;
+        margin: 0.5rem;
+        letter-spacing: 1px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.06);
+        }
+        img {
+          height: 1rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

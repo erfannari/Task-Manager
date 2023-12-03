@@ -1,0 +1,19 @@
+<div
+  class="not-done"
+  *ngFor="let task of tasks; let i = index"
+  (click)="onChangeStyle($event)"
+ 
+>
+  <div class="task-desc">
+    <div class="task-img">
+      <img
+        src="../../../assets/Icons/trash.png"
+        alt="trash"
+        (click)="onDeleteTask(i)"
+      />
+    </div>
+    <div class="task-name">
+      <p>{{ task.name }}</p>
+    </div>
+  </div>
+</div>
